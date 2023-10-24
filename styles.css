@@ -1,7 +1,7 @@
 :root {
     --primary-color: rgb(0, 0, 0);
     --Accent-color: rgb(72, 72, 72);
-    --Background: rgb(99, 95, 95);
+    --Background: rgb(77, 91, 75);
     --Text-color: rgb(0, 0, 0);
     font-family: 'Sans Serif';
     font-size: 16px;
@@ -12,8 +12,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: var(--Background);
-    /* background: url(https://raw.githubusercontent.com/RealSbeve/portfolio-website-visual-arts/main/ArtWorks/Los%20ojos%20del%20adulto.png?token=GHSAT0AAAAAACJF5F33LWOY7XIYXTXCBXMYZJXCXJQ); */
+    /* background: var(--Background); */
+    background: url(https://img.freepik.com/free-vector/paper-style-smooth-background_23-2148962684.jpg?w=1800&t=st=1698121355~exp=1698121955~hmac=3aca90933a618a91ee18398ad76dd4696e099306e9d5bc385b08102a587eb7e7);
     background-size: cover;
     height: 100vh;
 }
@@ -30,17 +30,17 @@ body {
     z-index: 3;
 }
 
-.navigation .link {
+.navigation div {
     padding: .75rem 1.5rem .75rem;
     --button-color: white;
 }
 
 .social-media {
-    padding-bottom: .5rem;
+    padding-bottom: 1.5rem;
 }
 
-.social-media .link {
-    padding: 0 1.5rem 1.5rem;
+.social-media div {
+    padding: .75rem 1.5rem .75rem;
     --button-color: white;
 }
 
@@ -61,7 +61,120 @@ body {
     justify-content: space-between;
 }
 
+.menu div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s;
+}
 /* .nav-container:hover + .menu {
     translate: 0%;
     opacity: 1;
 } */
+
+.spacer {
+    height: 117.15px;
+}
+
+.nav-descriptions div{
+    padding: .75rem 1.5rem .75rem;
+    height: 36px;
+    width: auto;
+}
+
+.nav-descriptions div:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.social-descriptions {
+    padding-bottom: 1.5rem;
+    
+}
+
+.social-descriptions div {
+    padding: .75rem 1.5rem .75rem;
+    height: 36px;
+}
+
+.social-descriptions div:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.page {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50rem;
+    height: 15rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    animation: startup 1s ease-in-out;
+}
+
+.title-box h1 {
+    animation: startup2 2s ease-in-out;
+}
+
+.title-box h2 {
+    animation: startup3 2.5s ease-in-out;
+}
+
+@keyframes startup {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes startup2 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes startup3 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
