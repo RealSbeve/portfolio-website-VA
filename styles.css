@@ -1,0 +1,67 @@
+:root {
+    --primary-color: rgb(0, 0, 0);
+    --Accent-color: rgb(72, 72, 72);
+    --Background: rgb(99, 95, 95);
+    --Text-color: rgb(0, 0, 0);
+    font-family: 'Sans Serif';
+    font-size: 16px;
+    color: var(--Text-color);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--Background);
+    /* background: url(https://raw.githubusercontent.com/RealSbeve/portfolio-website-visual-arts/main/ArtWorks/Los%20ojos%20del%20adulto.png?token=GHSAT0AAAAAACJF5F33LWOY7XIYXTXCBXMYZJXCXJQ); */
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 5rem;
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.navigation .link {
+    padding: .75rem 1.5rem .75rem;
+    --button-color: white;
+}
+
+.social-media {
+    padding-bottom: .5rem;
+}
+
+.social-media .link {
+    padding: 0 1.5rem 1.5rem;
+    --button-color: white;
+}
+
+.menu {
+    height: 100vh;
+    width: 15rem;
+    position: fixed;
+    margin-left: 5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    /* translate: -100%;
+    opacity: 0; */
+    transition: 1s;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .nav-container:hover + .menu {
+    translate: 0%;
+    opacity: 1;
+} */
