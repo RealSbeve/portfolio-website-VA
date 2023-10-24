@@ -1,10 +1,45 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: fixed;
+    height: 100dvh;
+    z-index: 10;
+  }
+
+
+.grid-item {
+    background-color: black;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5rem;
+    text-align: center;
+}
+
+.grid-container > div:nth-child(2n) {
+    /* Select all items in the second column */
+    transform: translate(-100%);
+    z-index: -1;
+    transition: 1s ease;
+    backdrop-filter: blur(10px);
+    background: none;
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: black;
+}
+
+.grid-container:hover > div:nth-child(2n) {
+    /* Select all items in the second column */
+    transform: translate(0);
+}
+
+
 :root {
     --primary-color: rgb(0, 0, 0);
     --Accent-color: rgb(72, 72, 72);
     --Background: rgb(77, 91, 75);
     --Text-color: rgb(0, 0, 0);
-    font-family: 'Sans Serif';
-    font-size: 16px;
+    font-family: 'Sans Serif', sans-serif;
+    font-size: 1rem;
     color: var(--Text-color);
 
 }
